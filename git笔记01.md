@@ -32,6 +32,43 @@
    查看文件状态：git status
    提交：git commit -m "说明"
    推送：git push
+   历史回退:
+```
+    一、放弃工作区修改: git checkout -- 文件
+	
+	二、由暂存区返回到工作区 :  git reset HEAD 文件名
+	
+	三、撤消版本库: git reset --hard commit_id
+	
+	四、推送出错：先git pull 再git push
+```
+
+   git log 查看日志
+   git log --pretty=oneline   
+   git reflog
+
+查看区别:
+    1.查看工作区的修改的差异: git diff 文件名
+    2.查看工作区和暂存区区别:git diff --cached 文件名
+    3.工作区与版本库的区别: git diff   HEAD 文件名
+    4.查看两次版本库之间的差异：git diff    commit_id     commit_id
+    
+     例如： git diff   bb6a1a8 6111f25
+
+   5.查看两个分支之间的差异:????
+
+
+   分支:git 重要内容
+   
+      查看分支： git branch
+      创建分支： git branch 分支名
+      切换分支：git checkout 分支名
+  
+      即创建也切换：git checkout -b 新分支
+
+      合并分支：git merge --no-ff 要合并的分支
+
+
    
   
 
@@ -42,5 +79,4 @@
 # ES6
 
 
-#  Vue
-
+#VUE
